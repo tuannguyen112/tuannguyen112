@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyện Tranh Miễn Phí</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to right, #cfd9df 0%, #e2ebf0 100%);
+            color: #333;
+            position: relative;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #000000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .comic-container {
+            flex: 0 1 calc(33.33% - 20px);
+            max-width: calc(33.33% - 20px);
+            min-width: 250px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .comic-container:hover {
+            transform: scale(1.05);
+        }
+        .comic {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+        }
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        h1 {
+            color: #ffc107;
+            margin-bottom: 20px;
+        }
+        h1, h2, p {
+            text-align: center;
+        }
+        p {
+            color: #6c757d;
+            line-height: 1.6;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            background-color: #343a40;
+            padding: 20px 0;
+            clear: both; 
+        }
+        footer p {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .side-decoration {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            width: 100px;
+            background-color: #343a40;
+            height: 100vh; 
+        }
+
+        .left-decoration {
+            left: 0;
+        }
+        .right-decoration {
+            right: 0;
+        }
+        .side-decoration-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .side-decoration-content h3 {
+            color: #fff;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .side-decoration-content p {
+            color: #ccc;
+            font-size: 0.9em;
+        }
+        .running-text {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+        .running-text h2 {
+            animation: slideLeft 5s linear infinite;
+        }
+        @keyframes slideLeft {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        
+        @media only screen and (max-width: 600px) {
+            .comic-container {
+                flex: 0 1 calc(50% - 20px); 
+                max-width: calc(50% - 20px); 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chuyện Tranh Miễn Phí</h1>
+    </header>
+    <div class="side-decoration left-decoration">
+        <div class="side-decoration-content">
+            <h3>Đón đọc hàng ngàn truyện tranh miễn phí!</h3>
+            <p>Khám phá và trải nghiệm với hàng ngàn tác phẩm đa dạng và hấp dẫn!</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="comic-container">
+            <h2>ClassRoom Of The Elite</h2>
+            <div class="comic-frame">
+                <img class="comic" src="https://tse3.mm.bing.net/th?id=OIP.yu5WpHBtZaH36OCEyJ3tUQHaEK&pid=Api&P=0&h=180" alt="Comic Image">
+            </div>
+            <h1>Click vào <a href="223.html">đây</a> để đọc.</h1>
+            <p>Thể loại:
+                Chính kịch , Tiểu thuyết nhẹ</p>
+        </div>
+        <div class="comic-container">
+            <h2>One Piece Chare Wano</h2>
+            <div class="comic-frame">
+                <img class="comic" src="https://tse1.mm.bing.net/th?id=OIP.U-gGnKEeMRMxl6EYT-MebAHaEK&pid=Api&P=0&h=180" alt="Comic Image">
+            </div>
+            <h1>Click vào <a href="224.html">đây</a> để đọc.</h1>
+            <p>Thể Loại: Hành Động Tiểu Thuyết Giả tường </p>
+        </div>
+        <div class="comic-container">
+            <h2> Odd taxi – Chuyến Taxi bất ổn</h2>
+            <div class="comic-frame">
+                <img class="comic" src="https://tse1.mm.bing.net/th?id=OIP.947DZn4ZfLm8q_UlCC_xfgAAAA&pid=Api&P=0&h=180" alt="Comic Image">
+            </div>
+            <h1>Click vào <a href="225.html">đây</a> để đọc.</h1>
+            <p>Chúc Bạn Có Một Trải Nhiệm Vui Vẻ</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="comic-container">
+            <h2>Blue Lock</h2>
+            <div class="comic-frame">
+                <img class="comic" src="https://tse1.mm.bing.net/th?id=OIP.h_7Np4X5Q31XwoJVhn4xhwHaEK&pid=Api&P=0&h=180" alt="Comic Image">
+            </div>
+            <h1>Click vào <a href="223.html">đây</a> để đọc.</h1>
+            <p>Chúc Bạn Có Một Trải Nhiệm Vui Vẻ</p>
+        </div>
+        <div class="comic-container">
+            <h2>Jujutsu Kaisen</h2>
+            <div class="comic-frame">
+                <img class="comic" src="https://tse2.mm.bing.net/th?id=OIF.VN5m98L2e1ECjl3h3Ph8WQ&pid=Api&P=0&h=180" alt="Comic Image">
+            </div>
+            <h1>Click vào <a href="224.html">đây</a> để đọc.</h1>
+            <p>Chúc Bạn Có Một Trải Nhiệm Vui Vẻ</p>
+        </div>
+        <div class="comic-container">
+            <h2>Oshi no Ko</h2>
+            <div class="comic-frame">
+                <img class="comic" src="https://tse3.mm.bing.net/th?id=OIP.jwiv0ryGUuoZ3B3XpuWfYwHaEK&pid=Api&P=0&h=180" alt="Comic Image">
+            </div>
+            <h1>Click vào <a href="225.html">đây</a> để đọc.</h1>
+            <p>Chúc Bạn Có Một Trải Nhiệm Vui Vẻ</p>
+        </div>
+        <div class="comic-container">
+            <h2>Black Clover</h2>
+            <div class="comic-frame">
+                <img class="comic" src="https://bloganchoi.com/wp-content/uploads/2023/02/phim-anime-2023-hay-hot-nhat-13-696x1031.jpg" alt="Comic Image">
+            </div>
+            <h1>Click vào <a href="225.html">đây</a> để đọc.</h1>
+            <p>Chúc Bạn Có Một Trải Nhiệm Vui Vẻ</p>
+        </div>
+        <div class="comic-container">
+            <h2>Mushoku Tensei</h2>
+            <div class="comic-frame">
+                <img class="comic" src="https://bloganchoi.com/wp-content/uploads/2023/02/phim-anime-2023-hay-hot-nhat-12-696x984.jpg" alt="Comic Image">
+            </div>
+            <h1>Click vào <a href="225.html">đây</a> để đọc.</h1>
+            <p>Chúc Bạn Có Một Trải Nhiệm Vui Vẻ</p>
+        </div>
+    </div>
+    
+    <div class="side-decoration right-decoration">
+        <div class="side-decoration-content">
+            <h3>Khám phá thêm nhiều truyện tranh hấp dẫn!</h3>
+            <p>Đọc ngay để tham gia vào thế giới của những câu chuyện thú vị!</p>
+        </div>
+    </div>
+</body>
+</html>

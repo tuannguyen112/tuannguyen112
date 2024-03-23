@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truyện Tranh Miễn Phí </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to right, #cfd9df 0%, #e2ebf0 100%);
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #ff6600;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .comic-container {
+            flex: 0 1 calc(33.33% - 20px);
+            max-width: calc(33.33% - 20px);
+            min-width: 250px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(17, 17, 17, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .comic-container:hover {
+            transform: scale(1.05);
+        }
+        .comic {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+        nav {
+            background-color: #ff6600;
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 2px solid #333;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            background-color: #ff9933;
+        }
+        nav a:hover {
+            background-color: #ffcc66;
+        }
+        section {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        article {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: calc(50% - 20px);
+            margin-right: 20px;
+            transition: transform 0.3s ease;
+        }
+        article:last-child {
+            margin-right: 0;
+        }
+        article:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #ff6600;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+            }
+            .side-decoration {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100px;
+            background-color: #343a40;
+        }
+
+        .side-decoration {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            width: 100px;
+            background-color: #343a40;
+            height: 100vh; 
+        }
+
+        .left-decoration {
+            left: 0;
+        }
+
+        .right-decoration {
+            right: 0;
+        }
+        .side-decoration-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .side-decoration-content h3 {
+            color: #fff;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .side-decoration-content p {
+            color: #ccc;
+            font-size: 0.9em;
+        }
+        .running-text {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+        .running-text h2 {
+            animation: slideLeft 5s linear infinite;
+        }
+        @keyframes slideLeft {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+
+        @media only screen and (max-width: 600px) {
+            .comic-container {
+                flex: 0 1 calc(50% - 20px); 
+                max-width: calc(50% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Truyện Tranh Miễn Phí </h1>
+    </header>
+    <div class="side-decoration left-decoration">
+        <div class="side-decoration-content">
+            <h3>Đón đọc hàng ngàn truyện tranh miễn phí!</h3>
+            <p>Khám phá và trải nghiệm với hàng ngàn tác phẩm đa dạng và hấp dẫn!</p>
+        </div>
+    </div>
+    <nav>
+        <a href="222.html">Trang Chủ</a>
+        <a href="224.html">Truyện 1</a>
+        <a href="225.html">Truyện 3</a>
+    </nav>
+    <section>
+        <article>
+            <h2>One Piece Chare Wano</h2>
+            <h1>Sơ lược về Nv Chính</h1>
+            <p>Tên: Monkey D. Luffy.
+                Thân thế và gia đình
+                Luffy sinh ra trong một gia đình cướp biển. Ông nội của anh là Monkey D. Garp, một thuyền trưởng huyền thoại và một đại tướng hải quân. Cha của Luffy là Monkey D. Dragon, một nhân vật bí ẩn và cũng là một người cộng sản đấu tranh chống lại chế độ thống trị. Mẹ của anh là Portgas D. Rouge, một phụ nữ có thân thế bí ẩn.
+                
+                Tính cách
+                Tính Cách Của Luffy
+                
+                Luffy là một cậu bé trẻ tuổi, có một tâm hồn đầy mạo hiểm và luôn có khát khao trở thành Vua Hải Tặc. Tính cách của Luffy được phác họa rõ ràng trong suốt cả loạt anime. Luffy là một người hết sức đồng cảm, luôn giúp đỡ những người gặp khó khăn và chống lại bất công. Anh không bao giờ bỏ rơi bạn bè của mình và luôn tin tưởng và tôn trọng đồng đội. 
+                
+                Mặc dù thường xuyên gặp phải những tình huống nguy hiểm và đối đầu với những kẻ thù mạnh mẽ, Luffy không bao giờ chùn bước và sẵn lòng đặt cả cuộc đời vào một điều rất quan trọng: tìm kiếm hòn đảo Raftel và trở thành Vua Hải Tặc.
+                
+                Nhân cách bên trong
+                Luffy có một nhân cách rất đặc biệt, điển hình cho sự ngây thơ và hồn nhiên của một đứa trẻ. Anh ta luôn tươi cười, vui vẻ và không bao giờ quan tâm đến những vấn đề phức tạp. Luffy thích tự do và không bị ràng buộc bởi những quy tắc xã hội hay đạo đức của những người khác. Đặc biệt, anh ta luôn tin tưởng và nhìn nhận mọi người theo cách rất đơn giản và chân thành.
+                
+                Sự can đảm và mạo hiểm
+                Tính cách của Luffy cũng được đặc trưng bởi sự can đảm và mạo hiểm. Anh ta sẵn sàng đối mặt với những tình huống nguy hiểm nhất và không bao giờ chùn bước trước đối thủ. Luffy có lòng trung thành mãnh liệt với bạn bè và nguyện sẵn sàng hy sinh bản thân để bảo vệ họ. Anh ta cũng rất quyết tâm và không bao giờ từ bỏ mục tiêu của mình, cho dù có trải qua những khó khăn và nguy hiểm.
+                
+                Yếu tố hài hước
+                Một trong những đặc điểm nổi bật nhất của tính cách Luffy là sự hài hước. Anh ta thường xuyên làm những hành động kỳ quặc và tạo ra những tình huống dở khóc dở cười. Luffy có thể làm cho mọi người xung quanh cười một cách tự nhiên với những hành động và lời nói của mình. Sự hài hước của Luffy không chỉ giúp xua tan không khí căng thẳng trong cuộc sống hằng ngày mà còn mang lại sự thích thú và niềm vui cho những người xung quanh.
+                
+                Sự quan tâm đến ước mơ cá nhân
+                Một trong những khía cạnh đáng chú ý khác của tính cách của Luffy là niềm tin mãnh liệt và quan tâm sâu sắc đối với ước mơ cá nhân của mình. Anh ta quyết tâm trở thành Vua Hải Tặc và thực hiện ước mơ của mình bằng mọi cách. Luffy không từ bỏ dù chỉ là những khó khăn và hiểm nguy trên con đường đi đến thành công. Tính cách này đã truyền cảm hứng và khuyến khích mọi người xung quanh Luffy cũng hy vọng và quyết định theo đuổi ước mơ của mình.
+                
+                Đánh giá tổng quan
+                Tính cách của Luffy được đánh giá cao và được yêu thích bởi nhiều người hâm mộ. Anh ta là một nhân vật dũng cảm, đáng tin cậy và hài hước. Qua hàng trăm tập truyện, tính cách của Luffy đã được phát triển và khẳng định vị thế của mình trong lòng người hâm mộ là một nhân vật đặc biệt và đáng ngưỡng mộ trong thế giới truyện tranh One Piece.
+                
+                Sức mạnh của Luffy
+                Sức Mạnh Của Luffy
+                
+                Một trong những sức mạnh đặc biệt và đáng chú ý nhất của Luffy là sức mạnh đàn hồi. Anh có thể kéo căng cơ và tạo ra đau đớn để tránh những đòn tấn công, giúp anh chống lại những kẻ thù mạnh mẽ. Anh áp dụng một hệ thống võ thuật gọi là Haki, cho phép anh nhìn thấy những vật thể vô hình như linh hồn và dùng năng lượng tinh thần để tạo ra đòn tấn công tiềm ẩn. 
+                
+                Ngoài ra, Luffy có thể sử dụng sức mạnh của Trái Ác Quỷ, một loại quả rất hiếm trong thế giới One Piece, để có những khả năng siêu phàm như biến cơ thể thành cao su, tăng sức mạnh và tốc độ của mình, và tạo ra các đòn tấn công mạnh mẽ.
+                
+                Sức mạnh haki
+                Trong thế giới One Piece, sức mạnh của Luffy đến từ nhiều yếu tố khác nhau. Một trong những yếu tố quan trọng và mạnh mẽ nhất của Luffy là Haki. Haki là một loại năng lực tinh thần đặc biệt, mà không phải ai cũng có thể sử dụng. Luffy đã phát triển cả ba loại Haki, bao gồm Haki Vị Thần, Haki Vũ Trụ và Haki Lửa.
+                
+                Haki Vị Thần
+                Haki Vị Thần là loại Haki mạnh nhất và hiếm nhất trong ba loại Haki. Chỉ một số người trong thế giới One Piece như Luffy mới có thể sử dụng loại này. Haki Vị Thần giúp Luffy có khả năng cảm nhận và chống lại ý chí của người khác, thậm chí đối đầu với Ác Quỷ hoặc Kẻ Hào Quang. Với Haki Vị Thần, Luffy có thể cảm nhận được linh hồn và ý định thực sự của người khác, từ đó đối phó và chiến đấu hiệu quả hơn.
+                
+                Haki Vũ Trụ
+                Haki Vũ Trụ giúp Luffy có thể đấm bay các thực thể phi vũ trụ như các Ác Quỷ hoặc Kẻ Hào Quang. Đây là loại Haki giúp Luffy có thể gây sát thương vật chất lên các quái vật siêu nhiên. Khi sử dụng Haki Vũ Trụ, Luffy có thể tạo ra sức tác động mạnh mẽ trên đối thủ và tăng cường sức mạnh đấm chất thể.
+                
+                Haki Lửa
+                Haki Lửa là loại Haki thuộc hệ thống đấu võ của thế giới One Piece. Với Haki Lửa, Luffy có thể cải thiện tốc độ và sức mạnh của các đòn tấn công của mình. Luffy có thể giúp cơ thể chiếu quyền tăng cường hơn, tạo ra sự tốc độ và sức mạnh phi thường, giúp đánh bại những kẻ thù mạnh nhất.
+                
+                Trái Ác Quỷ
+                Trái Ác Quỷ Trong One Piece
+                
+                Ngoài sức mạnh Haki, Luffy còn sở hữu một yếu tố quan trọng khác, đó là Trái Ác Quỷ. Luffy đã ăn Trái Gomu Gomu, là một trong những Trái Ác Quỷ mạnh nhất và hiếm nhất trong thế giới One Piece.
+                
+                Sức mạnh Trái Gomu Gomu
+                Trái Gomu Gomu đã cung cấp cho Luffy khả năng biến cơ thể của mình thành cao su. Với sức mạnh của Trái Gomu Gomu, Luffy có thể kéo dãn, bật lui, uốn cong và chống lại các đòn tấn công và sát thương từ đối thủ. Luffy cũng có thể tăng cường sức mạnh của đòn đấm của mình bằng cách bắn ra năng lượng ánh sáng Gomu Gomu.
+                
+                Luffy đã phát triển nhiều kỹ năng đặc biệt từ Trái Gomu Gomu. Một số kỹ năng nổi bật bao gồm:
+                
+                Gomu Gomu no Pistol: Luffy đấm với sức mạnh của Trái Gomu Gomu, tạo ra một đòn đấm mạnh mẽ.
+                Gomu Gomu no Gatling: Luffy nhanh chóng đấm liên tiếp với tốc độ ánh sáng, tạo ra hàng loạt đòn đấm liên tục.
+                Gomu Gomu no Red Hawk: Luffy kết hợp sức mạnh của Trái Gomu Gomu với ngọn lửa, tạo ra một cú đấm cháy nổ đáng sợ.
+                Nhờ sức mạnh haki và Trái Ác Quỷ, Luffy trở thành một trong những võ sĩ mạnh nhất và đáng gờm nhất trong thế giới One Piece. Với những khả năng đặc biệt này, Luffy đã vượt qua nhiều thử thách và trở thành Vua Hải Tặc đích thực.
+                
+                Khả năng phục hồi của Luffy
+                Khả năng hồi phục của Luffy
+                
+                Một khía cạnh đáng chú ý khác của Luffy là khả năng chịu đựng thiếu thốn lớn và khả năng phục hồi nhanh chóng. Mặc dù anh có thể bị thương nặng hoặc kiệt sức trong cuộc chiến, nhưng nhờ ý chí mạnh mẽ và đam mê của mình, Luffy thường tự phục hồi với tốc độ bất ngờ và tái chiến trong thời gian ngắn.
+                
+                Các địa điểm quan trọng trong cuộc đời Luffy
+                Bản Đồ One Piece
+                
+                Trong suốt cuộc phiêu lưu của mình, Luffy đã đi qua nhiều đảo, hòn đảo và thành phố quan trọng. Một số địa điểm nổi tiếng mà anh đã ghé qua và có tầm ảnh hưởng trong câu chuyện bao gồm: East Blue, nơi Luffy bắt đầu hành trình của mình và thành lập băng Mũ Rơm; Grand Line, một trong những vùng biển lớn nhất và nguy hiểm nhất trên thế giới; Marineford, nơi diễn ra một cuộc chiến quyết định trọng đại; và Punk Hazard, một hòn đảo bị ô nhiễm và thú vị.
+                
+                Luffy đã khám phá thế giới biển trong suốt tuổi thiếu niên của mình nhằm tìm kiếm kho báu huyền thoại, cũng như xây dựng đội hình của mình – băng hải tặc Mũ Rơm. Anh đã đi qua bất kỳ hòn đảo nào anh quen thuộc từ East Blue cho đến Grand Line và New World, đánh bại nhiều kẻ thù mạnh mẽ và gặp gỡ nhiều người bạn đồng hành.
+                
+                Mối quan hệ với những thành viên khác trong băng Mũ Rơm
+                Băng Hải Tặc Mũ Rơm
+                
+                Luffy không thể thiếu sự hỗ trợ và lòng tin tưởng từ những thành viên trong băng Mũ Rơm. Mỗi người trong băng đều có khả năng riêng và có vai trò quan trọng trong cuộc phiêu lưu của anh. Một số thành viên nổi tiếng trong băng Mũ Rơm bao gồm: Roronoa Zoro, kỳ thủ kiếm tài ba; Nami, chuyên gia điều hướng và trộm cướp; Usopp, thợ săn và người chế tạo tài ba; Tony Tony Chopper, bác sĩ và hải cẩu biết nói; và Nico Robin, nhà khảo cổ học và sát thủ tài ba.
+            </p>
+                <img class="comic" src="https://images.fbox.fpt.vn/wordpress-blog/2023/08/bang-hai-tac-mu-rom.jpg" alt="Comic Image">
+            </article>
+        </section>
+                
+    <div class="side-decoration right-decoration">
+        <div class="side-decoration-content">
+            <h3>Khám phá thêm nhiều truyện tranh hấp dẫn!</h3>
+            <p>Đọc ngay để tham gia vào thế giới của những câu chuyện thú vị!</p>
+        </div>
+    </div>
+</body>
+</html>
